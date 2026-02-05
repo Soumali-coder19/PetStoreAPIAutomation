@@ -1,0 +1,51 @@
+package api.endpoints;
+import static io.restassured.RestAssured.given;
+
+import api.payload.User;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+
+//userEndpoints.java
+//created for performing Create, Read, Update, Delete requests to the user API.
+public class userEndPoints {
+	public static Response createUser(User payload){				//creating endpoints (not TCs)
+		Response response = given()
+			.contentType(ContentType.JSON)
+			.accept(ContentType.JSON)
+			.body(payload)
+		.when()
+			.post(Routes.post_url);
+		
+		return response;
+	}
+	
+	public static Response readUser(String userName){				//reading endpoints (not TCs)
+		Response response = given()
+			.pathParam("username", userName)
+		.when()
+			.post(Routes.get_url);
+		
+		return response;
+	}
+	
+	public static Response updateUser(String userName, User payload){				//updating endpoints (not TCs)
+		Response response = given()
+			.contentType(ContentType.JSON)
+			.accept(ContentType.JSON)
+			.pathParam("username", userName)
+			.body(payload)
+		.when()
+			.put(Routes.update_url);
+		
+		return response;
+	}
+	
+	public static Response deleteUser(String userName){				//deleting endpoints (not TCs)
+		Response response = given()
+				.pathParam("username", userName)
+		.when()
+			.delete(Routes.delete_url);
+		
+		return response;
+	}
+}
