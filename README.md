@@ -291,8 +291,8 @@ Logs are written to:
 
 ## 🐛 Troubleshooting Guide
 
-### ❌ "mvn command not found"
-**Problem:** Maven is not installed or not in system PATH  
+### ❌ "mvn command not found."
+**Problem:** Maven is not installed or not in the system PATH  
 **Solution:**
 ```bash
 # Verify Maven installation
@@ -302,8 +302,8 @@ mvn -version
 # Add Maven to your PATH environment variable
 ```
 
-### ❌ "Cannot find test reports"
-**Problem:** Tests ran but you can't find the results  
+### ❌ "Cannot find test reports."
+**Problem:** Tests ran, but you can't find the results  
 **Solution:**
 ```bash
 # After running: mvn test
@@ -329,8 +329,8 @@ mvn -version
 - Check `UserTests2.java` - it has different assertions than `UserTests.java`
 - Review the test report for detailed error messages
 
-### ❌ "Tests run but reports are empty"
-**Problem:** Tests passed but no report generated  
+### ❌ "Tests run, but reports are empty."
+**Problem:** Tests passed, but no report generated  
 **Solution:**
 ```bash
 # Make sure to run:
@@ -409,7 +409,7 @@ Response: 200 OK
 
 ---
 
-## 🎓 What You'll Learn
+## 🎓 What we Learnt
 
 This project demonstrates:
 
@@ -417,7 +417,7 @@ This project demonstrates:
 ✅ **Test Automation** - Writing automated tests that run without manual intervention  
 ✅ **Java Programming** - Using Java for test automation  
 ✅ **Testing Frameworks** - Working with industry-standard tools like TestNG and REST Assured  
-✅ **Data-Driven Testing** - Running same tests with different data sets  
+✅ **Data-Driven Testing** - Running the same tests with different data sets  
 ✅ **Test Reporting** - Generating professional test reports  
 ✅ **Git & Version Control** - Managing code with GitHub  
 ✅ **Best Practices** - Clean code, maintainability, documentation  
